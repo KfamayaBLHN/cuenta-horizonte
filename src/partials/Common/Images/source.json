@@ -1,0 +1,38 @@
+{
+  "ObtenSvg": {
+    "src": "/imagenes/icons/icn_blhn_03_lafise_incremento_interes_circular_ch.svg",
+    "alt": "Incremento de interes",
+    "w": 157,
+    "h": 157
+  },
+  "RecibeSvg": {
+    "src": "/imagenes/icons/icn_blhn_02_recibe_td_ch.svg",
+    "alt": "Recibe tu Tarjeta de Débito dorada ",
+    "w": 157,
+    "h": 157
+  },
+  "DisfrutaSvg": {
+    "src": "/imagenes/icons/icn_blhn_01_disfruta_tasa_interes_ch.svg",
+    "alt": "Disfruta una tasa atractiva de interés",
+    "w": 157,
+    "h": 157
+  },
+  "AcumulaSvg": {
+    "src": "/imagenes/icons/icn_blhn_04_acumula_doble_points_ch.svg",
+    "alt": "Acumula doble punto por compras",
+    "w": 157,
+    "h": 157
+  },
+  "AdministraSvg": {
+    "src": "/imagenes/icons/icn_blhn_05_administra_bnt_ch.svg",
+    "alt": "Administra tu dinero desde Bancanet",
+    "w": 157,
+    "h": 157
+  },
+  "SinPenalizacionSvg": {
+    "src": "/imagenes/icons/icn_blhn_06_lafise_retiro_ch.svg",
+    "alt": "Sin Penalizacion por retiro",
+    "w": 157,
+    "h": 157
+  }
+}

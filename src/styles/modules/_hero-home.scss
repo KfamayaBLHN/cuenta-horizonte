@@ -1,0 +1,156 @@
+// home
+.hero-home {
+  height: 655px;
+  background-color: #FEF7EC !important;
+  @include hero-basic(100%, //width
+    285px, //heigt
+    '/imagenes/banner-footage/BKG_BLHN_Banner_GRL_Seccion01_Cuenta_Horizonte_Desktop_Sep2024_01@1x.webp', //imagen
+    20px, //marginTop
+    280px, //width
+    280px, //height
+    '', //fondo
+    0px, //bottom
+    ''
+  );
+  z-index: 1000;
+  padding-bottom: 0 !important;
+  overflow: hidden;
+  position: relative;
+
+  &:after {
+    position: relative;
+    background-size: auto 100%;
+    display: block;
+    content: '';
+  }
+
+  &:before {
+    background-size: cover;
+    content: '';
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.breadcrumbs {
+  background: #efebeb !important;
+}
+
+.color1 { color: #4D4D4D; }
+.color2 { color: #018765; }
+
+.text-gray {
+  padding-right: 0px !important;
+  font-size: 2.2rem;
+  line-height: 2.75rem;
+}
+.h4 {
+  font-size: 1.2rem !important;
+}
+
+@media (min-width: $size-md ) {
+  .hero-home {
+    height: auto;
+    @include hero-basic-md(
+    479px, //width
+    437px, //heigth
+    137px, //right
+    80px //marginTop
+    );
+    background: #E6F7FD;
+    
+    &:before {
+      left: auto;
+      transform: none;
+    }
+
+    .text-gray {
+      width: 750px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-home {
+    text-align: center;
+  }
+}  
+
+@media (min-width: $size-lg ) {
+  .hero-home {
+    height: 420px;
+    @include hero-basic-xl(
+      603px, //width
+      500px, //heigth
+      '/imagenes/banner-footage/BKG_BLHN_Banner_GRL_Seccion01_Cuenta_Horizonte_Desktop_Sep2024_01@1x2x.webp' //imagen
+    );
+
+    &:before {
+      background-size: cover;
+      bottom: 0;
+      left: auto;
+      right: 30px;
+      transform: none;
+    }
+  }
+}
+
+@media (min-width: $size-xl ) {
+  .hero-home {
+      height: 420px;
+    @include hero-basic-xl(
+      692px, //width
+      430px, //heigth
+      '/imagenes/banner-footage/BKG_BLHN_Banner_GRL_Seccion01_Cuenta_Horizonte_Desktop_Sep2024_01@1x2x.webp' //imagen
+    );
+
+    .text-gray {
+      width: 550px;
+    }
+
+    &:before {
+      background-size: cover;
+      bottom: 0%;
+      left: auto;
+      right: -10px;
+      transform: none;
+      background-size: cover;
+      position: absolute;
+    }
+  }
+
+  .hero {
+    height: 420px;
+  }
+}
+
+@media (min-width: $size-xxl ) {
+  .hero-home {
+      height: 420px;
+      padding-right: 20px;
+    @include hero-basic-xxl(
+      722px, //width
+      450px, //heigth
+      '/imagenes/banner-footage/BKG_BLHN_Banner_GRL_Seccion01_Cuenta_Horizonte_Desktop_Sep2024_01@1x2x.webp' //imagen
+    );
+
+    .text-gray {
+      width: 550px;
+    }
+
+    &:before {
+      background-size: cover;
+      bottom: 0;
+      left: auto;
+      right: 0px;
+      transform: none;
+    }
+  }
+  .text-gray {
+    padding-right: 0px !important;
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+}
+
+

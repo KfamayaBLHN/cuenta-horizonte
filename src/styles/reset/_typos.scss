@@ -1,0 +1,14 @@
+h1,
+.h1 {
+  font-size: 40px;
+  line-height: 54px;
+  font-weight: bold;
+}
+
+@media (min-width: $size-md) {
+  h1,
+  .h1 {
+    font-size: 64px;
+    line-height: 72px;
+  }
+}

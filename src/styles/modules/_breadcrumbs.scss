@@ -1,0 +1,10 @@
+.breadcrumbs {
+    padding-left: 0; /* Por defecto, no padding */
+  }
+  
+  @media (min-width: 768px) { /* Ajusta el tamaño según necesites */
+    .breadcrumbs {
+      padding-left: 77px; /* Padding solo para versiones desktop */
+    }
+  }
+  

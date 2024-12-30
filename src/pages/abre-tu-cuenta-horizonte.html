@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <link rel="shortcut icon" href="https://www.lafise.com/cdn/imagenes/default/favicon.ico" type="image/x-icon">
+  <link rel="canonical"
+    href="https://www.lafise.com/blh/banca-personal/cuenta-horizonte/solicitud-en-linea">
+  <meta name="description"
+    content="Con la Cuenta Horizonte, estás haciendo una inversión en tu futuro, al obtener interés que multiplican tus ahorros. ¡Solicítala hoy!">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;900&amp;display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.lafise.com/cdn/v2/lafise-styles-cdn-v2.css">
+  <title>Solicita Cuenta Horizonte - LAFISE Honduras</title>
+  <link rel="stylesheet" href="/cdn/landing/css/landing.css">
+  <style>
+    #main {
+      height: calc(100vh - 80px);
+    }
+  </style>
+</head>
+
+<body>
+  <!--#include virtual="/cdn/landing/header.html" -->
+  <main id="main"></main>
+  
+  <script>
+    const queryString = window.location.search;
+    var ifrm = document.createElement("iframe");
+    let src = 'https://comunicaciones.lafise.com:443/api/campaigns/referral/1cba7bf7-30f1-446c-934e-f300bd82f750';
+
+    // magia
+    if (queryString !== '') {
+      const urlParams = new URLSearchParams(queryString);
+      const SF_Campaign_ID = urlParams.get('SF_Campaign_ID');
+      switch (SF_Campaign_ID) {
+        case 'GOOGLE':
+          src = 'https://comunicaciones.lafise.com:443/api/campaigns/referral/35c16ab1-b30f-44e0-8053-e6b188870101';
+          break;
+        case 'META':
+          src = 'https://comunicaciones.lafise.com:443/api/campaigns/referral/a06f244e-1ba3-4e8c-8bb5-6b388308775c';
+          break;
+        case 'INSTAGRAM':
+          src = 'https://comunicaciones.lafise.com:443/api/campaigns/referral/e41703fe-1e77-4a30-aba5-d614ff2b7e20';
+          break;
+        default:
+          src = 'https://comunicaciones.lafise.com:443/api/campaigns/referral/1cba7bf7-30f1-446c-934e-f300bd82f750';
+          break;
+      }
+    }
+
+    ifrm.setAttribute("src", src);
+    ifrm.style.width = "100%";
+    ifrm.style.height = "100%";
+    ifrm.setAttribute('title', 'Comunicaciones - Banco LAFISE');
+    document.querySelector('#main').appendChild(ifrm);
+  </script>
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'GTM-MK6G6C3']);
+  _gaq.push(['_setDomainName', 'none']);
+  _gaq.push(['_setAllowHash', true]);
+
+
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MK6G6C3" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe>
+  </noscript>
+</body>
+
+</html>

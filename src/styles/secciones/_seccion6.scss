@@ -1,0 +1,46 @@
+
+.section-6{
+  background: white;
+  color: #4d4d4d;
+  padding: 57px 0px;
+}
+
+.section-6 .container-fluid {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.section-6 .questions {
+  padding-left: 12.7px;
+  padding-right: 12.7px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h2 {
+  padding-bottom: 30px;
+  font-size: 2rem;
+  // text-align: center;
+}
+
+.title {
+  font-size: 18px;
+  line-height: 1rem;
+}
+
+.section-6 .accordion-body {
+  padding: 0;
+  padding-top: 10px;
+}
+
+@media (min-width: $size-xl) {
+  .h2 {
+    font-size: 2rem !important;
+  }
+}
+
+

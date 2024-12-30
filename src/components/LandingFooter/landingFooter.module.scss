@@ -1,0 +1,11 @@
+@import '../../styles/utils/utils';
+.footer {
+  background: linear-gradient(180deg, #018765, #00583c);
+  padding-top: 22px;
+  padding-bottom: 62px;
+  span {
+    font-size: 12px;
+    line-height: 16px;
+    color: #fff;
+  }
+}

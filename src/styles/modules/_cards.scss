@@ -1,0 +1,135 @@
+.card {
+  box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.1)!important;
+  --bs-card-border-radius: 3px;
+  --bs-card-border-width: 0px;
+
+  .card-body {
+    --bs-card-spacer-y: 0;
+    --bs-card-spacer-x: 1rem;
+  }
+  .card-footer {
+    --bs-card-cap-padding-y: 0;
+  }
+}
+
+.card-groud-n3 {
+  max-width: 1080px;
+  margin: 0 auto;
+
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 275px;
+    padding-bottom: 40px;
+
+    .card-body {
+      text-align: center;
+      width: 100%;
+      height: auto;
+    }
+
+    .card-body h3{
+      color: #00583c;
+    }
+
+    .card-img {
+      width: auto;
+      height: auto;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+  }
+
+  .card:nth-child(2) {
+    margin: 24px 0;
+  }
+}
+
+@media (min-width: $size-md) {
+  .card-groud-n3 {
+    gap: 24px;
+
+    .card {
+      max-width: 328px;
+      
+    }
+    > div {
+      flex: 1 0 0%;
+    }
+
+    .card:nth-child(2) {
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: $size-lg) {
+  .card-groud-n3 {
+    gap: 48px;
+  }
+
+}
+
+@media (min-width: $size-xl) {
+  .card-groud-n3 {
+    gap: 48px;
+
+    .card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: auto;
+      height: 280px;
+
+      .card-body {
+        text-align: center;
+        width: 100%;
+      }
+
+      .card-img {
+        width: 140px;
+        height: 130px;
+        padding: 20px;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: $size-xxl) {
+  .card-groud-n3 {
+    gap: 48px;
+
+    .card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: auto;
+      height: 280px;
+
+      .card-body {
+        text-align: center;
+        width: 100%;
+      }
+
+      .card-img {
+        width: 140px;
+        height: 130px;
+        padding: 20px;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+.card-container {
+  height: 340px;  
+}
+
+ 
+.card-container > .card { 
+  height: 100%;
+}

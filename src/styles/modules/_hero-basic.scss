@@ -1,0 +1,55 @@
+// hero basic
+@mixin hero-basic($widthImagen, $heigthImagen, $urlImagen , $marginTop, $widthFondo, $heigthFondo, $urlFondo, $bottomFondo, $altImagen) {
+    &:after {
+      margin-top: $marginTop;
+      width: $widthImagen;
+      height: $heigthImagen;
+      //imagen pequeña
+      background: url($urlImagen) no-repeat center center;
+      alt: $altImagen;
+    }
+  }
+
+@mixin hero-basic-lg($widthImagen, $rightFondo, $marginImage) {
+
+    &:after {
+      margin-top: $marginImage;
+      width: $widthImagen;
+    }
+    &:before {
+      right: $rightFondo;
+    }
+}
+
+@mixin hero-basic-md($widthImagen, $heigthImagen, $rightFondo, $marginImage) {
+
+  &:after {
+    margin-top: $marginImage;
+    height: $heigthImagen;
+  }
+  &:before {
+    right: $rightFondo;
+  }
+}
+  
+@mixin hero-basic-xl($widthImagen, $heigthImagen, $urlImagen) {
+    text-align:initial;
+    &:before {
+      width: $widthImagen;
+      height: $heigthImagen;
+      //imagen banner
+      background: url($site_url+$urlImagen) no-repeat center center;
+    }
+
+  }
+  
+@mixin hero-basic-xxl($widthImagen, $heigthImagen, $urlImagen) {
+    text-align:initial;
+    &:before {
+      width: $widthImagen;
+      height: $heigthImagen;
+      //imagen banner
+      background: url($site_url+$urlImagen) no-repeat center center;
+    }
+
+  }

@@ -1,0 +1,84 @@
+
+//New -----------------------------------------------
+
+.section-3 {
+  background: #ffffff 80%;
+  position: relative;
+  text-align: center;
+  .h2 {
+    font-size: 2rem;
+    line-height: 2.77rem;
+  }
+  .p {
+    line-height: 1.6rem;
+  }
+  .imag{
+    display: flex;
+    justify-content: center;
+  }
+  .img-section-3{
+    padding: 15px 0px;
+    width: 430px;
+    height: auto;
+  }
+}
+
+
+@media (min-width: $size-md ) {
+  .section-3 {
+    padding-top: 30px !important;
+    .h2 {
+      font-size: 2.5rem;
+      line-height: 52px;
+    }
+  }
+
+  .img-section-3{
+    padding: 20px 0px;
+  }
+}
+
+@media (min-width: $size-xl ) {
+  .section-3 {
+    background: #ffffff 80%;
+    position: relative;
+    text-align: start;
+    .h2 {
+      font-size: 2rem;
+      line-height: 2.77rem;
+    }
+    .imag{
+      display: flex;
+      justify-content: center;
+    }
+    .img-section-3{
+      padding: 20px 0px;
+      width: 550px;
+      height: auto;
+    }
+  }
+}
+
+@media (min-width: $size-xxl ) {
+  .section-3 {
+    background: #ffffff 80%;
+    position: relative;
+    text-align: start;
+    .h2 {
+      font-size: 2rem;
+      line-height: 2.77rem;
+    }
+    .imag{
+      display: flex;
+      justify-content: center;
+    }
+    .img-section-3{
+      padding: 20px 0px;
+      width: 550px;
+      height: auto;
+    }
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {}

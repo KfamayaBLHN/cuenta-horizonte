@@ -1,0 +1,197 @@
+.react-multiple-carousel__arrow--left,
+.react-multiple-carousel__arrow--right {
+    bottom: 0;
+
+}
+
+.react-multi-carousel-list {
+
+    .react-multiple-carousel__arrow--left,
+    .react-multiple-carousel__arrow--right {
+        width: 37px;
+        height: 37px;
+        margin-left: -30px;
+        margin-right: -30px;
+        min-width: 0;
+        min-height: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background:#ffffff;
+        opacity: 0.7;
+        border: 0px solid #ffffff;
+
+        &:before {
+            background: url('/imagenes/icons/icon-arrow.svg') no-repeat center center;
+            width: 11px;
+            height: 16px;
+            background-size: cover;
+            content: "";
+            // filter: invert(86%) sepia(1%) saturate(21%) hue-rotate(35deg) brightness(92%) contrast(90%);
+        }
+
+        &:hover {
+            background: none transparent;
+            opacity: 1;
+        }
+    }
+}
+
+.react-multi-carousel-list .react-multiple-carousel__arrow--right {
+    &:before {
+        transform: rotate(180deg);
+    }
+}
+
+.react-multiple-carousel__arrow--left {
+    left: 50% !important;
+    transform: translateX(-70px);
+}
+
+.react-multiple-carousel__arrow--right {
+    right: 50% !important;
+    transform: translateX(70px);
+}
+
+.react-multi-carousel-list {
+    padding-bottom: 75px;
+}
+
+@media (min-width: $size-lg) {
+    .react-multi-carousel-list {
+        padding-bottom: 77px;
+    }
+}
+
+
+// dot list
+.react-multi-carousel-list {
+    .react-multi-carousel-dot-list {
+        bottom: 6px !important;
+    }
+
+    .react-multi-carousel-dot button {
+        width: 13px;
+        height: 13px;
+        border-radius: 13px;
+        border: none;
+        background-color: #D9D9D9;
+    }
+
+    .react-multi-carousel-dot--active button {
+        background-color: #33BA75;
+    }
+}
+
+@media (min-width: $size-lg) {
+    // dot list
+    .react-multi-carousel-list {
+        .react-multi-carousel-dot-list {
+            bottom: 6px !important;
+        }
+
+        .react-multi-carousel-dot button {
+            width: 13px;
+            height: 13px;
+            border-radius: 13px;
+            border: none;
+            background-color: #D9D9D9;
+        }
+
+        .react-multi-carousel-dot--active button {
+            background-color: #33BA75;
+        }
+    }
+}
+
+// -- Carousel landing
+.carousel {
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+}
+
+.carousel-indicators {
+    margin: 0;
+
+    button[data-bs-target] {
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        border: 1px solid var(--lfs-color-secundary);
+        border-radius: 50%;
+        background-clip: border-box;
+        opacity: 1;
+
+        &.active {
+            background-color: var(--lfs-color-secundary);
+        }
+    }
+}
+
+.carousel-inner {
+    min-height: 280px;
+
+    .box {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+.carousel .carousel-control-prev,
+.carousel .carousel-control-next {
+    display: none;
+}
+
+@media all and (min-width: $size-md ) {
+    .carousel-inner {
+        min-height: auto;
+
+    }
+}
+
+@media all and (min-width: $size-md ) {
+    .carousel-inner {
+        .box {
+            max-width: none;
+        }
+    }
+}
+
+
+// 
+@media all and (min-width: $size-md) {
+    .carousel .carousel-item {
+        display: block;
+        margin: 0;
+    }
+
+    .carousel {
+
+        .carousel-item-next,
+        .carousel-item-prev,
+        .active.carousel-item-start,
+        .active.carousel-item-end,
+        .carousel-item.active,
+        .carousel-item-next,
+        .carousel-item-prev {
+            display: block;
+            margin: 0;
+            transform: none;
+            transition: none;
+        }
+    }
+
+    // indicators 
+    .carousel .carousel-indicators {
+        display: none;
+    }
+
+}
+
+.carousel-container {
+    max-width: 1108px;
+    margin: 0 auto;
+}

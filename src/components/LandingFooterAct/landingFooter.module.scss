@@ -1,0 +1,11 @@
+@import '../../styles/utils/utils';
+.footer {
+  background-color: $verde-lafise;
+  padding-top: 22px;
+  padding-bottom: 42px;
+  span {
+    font-size: 12px;
+    line-height: 16px;
+    color: #fff;
+  }
+}

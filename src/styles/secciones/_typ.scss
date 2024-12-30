@@ -1,0 +1,17 @@
+.icon-party {
+  background: url('https://www.lafise.com/landings/img/icono_thank_you_page.gif') no-repeat 50%;
+  height: 208px;
+  width: 100%;
+  display: block;
+  background-size: auto 100%;
+}
+.bg-gradient-primary {
+  background: -webkit-gradient(linear,left top,left bottom,from(#33BA75),to(#018765));
+  background: linear-gradient(180deg,#33BA75 0%,#018765 100%);
+}
+
+@media (min-height: 728px) {
+  .bg-gradient-primary {
+    min-height: calc(100vh - 80px - 108px);
+  }
+}

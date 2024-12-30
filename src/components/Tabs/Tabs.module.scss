@@ -1,0 +1,145 @@
+$size-sm: 576px;
+$size-md: 768px;
+$size-lg: 992px;
+$size-xl: 1200px;
+$size-xxl: 1440px;
+
+.nav-tabs {
+  li:first-child button {
+    border-left: 1px solid #E4E4E4 !important;
+  }
+
+  li {
+    overflow: hidden;
+  }
+
+  button {
+    font-size: 18px;
+    line-height: 24px;
+    // padding-top: 20px;
+    // padding-bottom: 20px;
+    padding: 20px 10px;
+    color: #4D4D4D;
+    background: #F3F3F3 !important;
+    border-color: #E4E4E4 !important;
+    border-left: none !important;
+    border-radius: 0px !important;
+    position: relative;
+    z-index: 0;
+
+    &:hover,
+    &:focus {
+      color: var(--lfs-color-text);
+    }
+
+    &:before {
+      position: absolute;
+      top: -1px;
+      left: -1px;
+      right: -1px;
+      height: 3px;
+      content: '';
+      background-color: var(--lfs-color-secundary);
+      z-index: 1;
+      transform: translateY(-3px);
+      transition: transform 0.3s;
+    }
+
+    &[aria-selected="true"] {
+      background: #fff !important;
+      color: var(--lfs-color-secundary) !important;
+      cursor: default;
+      user-select: none;
+
+      &:before {
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+
+
+// accordiion buttons
+.accordion-button {
+  font-size: 16px;
+  color: #A0A0A0;
+  padding: 20px 16px;
+  border: 1px solid #E4E4E4 !important;
+  background-color: #F4F4F4;
+  outline: none;
+  box-shadow: none;
+  &[aria-expanded="true"] {
+    background-color: #fff;
+    color: var(--lfs-color-secundary);
+    outline: none !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid #E4E4E4;
+  }
+  &:focus,
+  &:hover,
+  &:active {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+// accordion icons
+.accordion-button {
+  position: relative;
+  &:before,
+  &:after {
+    position: absolute;
+    top: 50%;
+    bottom: auto;
+    right: 16px;
+    width: 25px;
+    height: 25px;
+    background: red;
+    content: '';
+    transform: translateY(-50%) !important;
+  }
+  &:before {
+    background: url('./assets/icono-acordeon-mostrar.svg') no-repeat;
+    background-size: cover;
+    opacity: 1;
+  }
+  &:after {
+    background: url('./assets/icono-acordeon-ocultar.svg') no-repeat !important;
+    background-size: cover;
+    opacity: 0;
+  }
+  &[aria-expanded="true"] {
+    &:before {
+      opacity: 0;
+    }
+    &:after {
+      opacity: 1;
+    }
+  }
+}
+
+// tab-pane 
+.is-accordion-mobile .tab-pane {
+  > div {
+    border: none;
+    background: none transparent;
+  }
+}
+  
+
+// accordion states
+.accordion-collapse {
+  opacity: 1;
+  @media screen and (min-width: $size-md) {
+    display: block !important;
+  }
+}
+@media screen and (max-width: $size-md) {
+  .is-accordion-mobile {
+    .tab-pane {
+      display: block;
+      opacity: 1;
+    }
+  }
+}

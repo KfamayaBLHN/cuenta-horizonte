@@ -1,0 +1,65 @@
+@import "../../styles/utils/utils";
+
+.layoutContainer {
+  position: relative;
+  z-index: 0;
+  padding-top: 144px;
+}
+
+.infoContainer {
+  padding-left: 30px;
+  padding-right: 30px;
+  > div {
+    position: relative;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 15px 25px rgba(#000, 0.2);
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media all and (min-width: $size-md) {
+  .layoutContainer {
+    padding-top: 365px;
+  }
+  .infoContainer {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+// imagen
+.imagenContent {
+  position: absolute;
+  width: 100%;
+  height: 268px;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  content: "";
+}
+@media all and (min-width: $size-md) {
+  .imagenContent {
+    height: 546px;
+  }
+}
+
+// SobrepuestoBody
+.sobrepuestoBody {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.bgImgWa{
+  background-image: url('/imagenes/fotos/home/bg-verde.webp') !important;
+}
+
+.infoContainer{
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin: auto !important;
+}

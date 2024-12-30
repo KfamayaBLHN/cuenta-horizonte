@@ -1,0 +1,51 @@
+@function calc_size ( $normal_size, $factor) {
+  @return $normal_size - ($normal_size * $factor);
+}
+
+/*
+ * Descripción: Utilizado para crear iconos simples
+ */
+
+@mixin creador_iconos ( $name, $w, $h, $url ) {
+  .#{$name} {
+    width: $w;
+    height: $h;
+    background-image: url('#{$url}');
+    background-repeat: no-repeat;
+    background-size: $w $h;
+    display: inline-block;
+  }
+}
+@mixin wh ( $w, $h ) {width: $w;height: $h;
+}
+/*
+  Descripción: Utilizado para crear iconos que están contenidos en un círculo
+  Parametros:
+  $name: nombre de la clase del icono
+  $cSize: ( circle size) Tamaño del círculo contenedor del icono
+  $cBG: (circle background) Código de color usado por el círculo contenedor del icono
+  $iW: (icon width) Ancho del icono 
+  $iH: (icon height) Alto del icono 
+  $iUrl: (icon Url) Url de la imagen del icono
+*/
+@mixin creador_iconos_circulares ( $name, $cSize, $cBG, $iW, $iH, $iUrl) {
+  .#{$name} {
+    width: $cSize;
+    height: $cSize;
+    background: $cBG;
+    position: relative;
+    display: inline-block;
+    border-radius: 100%;
+    &:before {
+      content: '';
+      width: $iW;
+      height: $iH;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url('#{$iUrl}');
+      background-size: 100% 100%;
+    }
+  }
+}

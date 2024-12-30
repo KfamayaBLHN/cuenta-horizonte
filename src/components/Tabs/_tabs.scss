@@ -1,0 +1,146 @@
+.tab-content>.tab-pane {
+  display: block;
+}
+.fade:not(.show) {
+  opacity: 1;
+}
+@media all and (min-width: $size-md ) {
+  .tab-content>.tab-pane {
+    display: none;
+  }
+  .tab-content>.active {
+    display: block;
+  }
+  .fade:not(.show) {
+    opacity: 0;
+  }
+  .btn-link {
+    display: none;
+  }
+  .collapse:not(.show) {
+    display: block;
+  }
+}
+
+// tabs navigation
+.nav-tabs {
+  margin: 0;
+  padding: 0;
+  .nav-item {
+    display: flex;
+    flex: 1;
+  }
+  .nav-link {
+    display: block;
+    width: 100%;
+    height: 65px;
+    line-height: 65px;
+    border: 1px solid #E4E4E4;
+    background-color: #F3F3F3;
+    border-radius: 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #909090;
+    padding: 0;
+    &.active {
+      background-color: #fff;
+      position: relative;
+      color: $verde-esmeralda-seo;
+      // top line
+      &:before {
+        height: 2px;
+        background-color: $verde-esmeralda;
+        content: '';
+        left: -1px;
+        top: 0;
+        right: -1px;
+        position: absolute;
+        opacity: 1;
+      }
+    }
+  }
+  .nav-item:nth-child(2) .nav-link {
+    border-left: none;
+    border-right: none;
+  }
+}
+
+// collapse
+.btn-link {
+  background-color: #FFF;
+  height: 65px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #E4E4E4;
+  border-radius: 0;
+  text-decoration: none;
+  position: relative;
+  text-decoration: none;
+  &:focus,
+  &:active,
+  &:hover {
+    box-shadow: none;
+    text-decoration: none;
+  }
+  // top line
+  &:before {
+    height: 2px;
+    background-color: $verde-esmeralda;
+    content: '';
+    left: -1px;
+    top: 0;
+    right: -1px;
+    position: absolute;
+    opacity: 1;
+  }
+  span {
+    color: $verde-esmeralda-seo;
+    font-weight: 600;
+  }
+  .icon {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    z-index: 0;
+    &:before,
+    &:after {
+      display: block;
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-size: 100%;
+      transition: opacity 0.3s;
+    }
+    &:before {
+      background-image: url('/imagenes/iconos/icono-acordeon-mostrar.svg');
+      z-index: 1;
+      opacity: 0;
+    }
+    &:after {
+      background-image: url('/imagenes/iconos/icono-acordeon-ocultar.svg');
+      opacity: 1;
+      z-index: 2;
+    }
+  }
+  &.collapsed {
+    background-color: #F4F4F4;
+    span {
+      color: $text-color;
+    }
+    .icon:before {
+      opacity: 1;
+    }
+    .icon:after {
+      opacity: 0;
+    }
+    &:before {
+      opacity: 0;
+    }
+  }
+}

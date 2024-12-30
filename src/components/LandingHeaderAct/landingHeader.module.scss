@@ -1,0 +1,25 @@
+
+@import '../../styles/utils/utils';
+header .logo-content{
+  background-color: $verde-lafise;
+}
+
+header .disclaimer {
+  background-color: #F4F4F4;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  .icono-candado {
+    margin-right: 8px;
+  }
+  span {
+    font-size: 12px;
+    line-height: 16px;
+    color: #4d4d4d;
+  }
+}
+.icono-candado {
+  width: 10px;
+  height: 12px;
+  background: url('./icono-candado.svg') no-repeat center center;
+  display: inline-block;
+}
